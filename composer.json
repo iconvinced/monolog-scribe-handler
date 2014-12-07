@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "php": ">=5.3.0",
         "monolog/monolog": "~1.0",
         "pear-pear.horde.org/Horde_Scribe": "2.0.1"
     },
