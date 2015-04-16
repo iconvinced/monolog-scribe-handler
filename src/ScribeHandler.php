@@ -18,6 +18,7 @@ class ScribeHandler extends \Monolog\Handler\AbstractHandler
 
     public function handle(array $record)
     {
-        $this->scribe->log($record['channel'], $record['message']);
+        $formatted = $this->getFormatter()->format($record);
+        $this->scribe->log($record['channel'], $formatted);
     }
 }
